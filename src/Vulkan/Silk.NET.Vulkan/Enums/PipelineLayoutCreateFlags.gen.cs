@@ -9,11 +9,13 @@ using Silk.NET.Core.Attributes;
 
 namespace Silk.NET.Vulkan
 {
-    [Flags()]
+    [Flags]
     [NativeName("Name", "VkPipelineLayoutCreateFlags")]
     public enum PipelineLayoutCreateFlags : int
     {
         [NativeName("Name", "VK_PIPELINE_LAYOUT_CREATE_RESERVED_0_BIT_AMD")]
         PipelineLayoutCreateReserved0BitAmd = 1,
+        [NativeName("Name", "VK_PIPELINE_LAYOUT_CREATE_RESERVED_1_BIT_AMD")]
+        PipelineLayoutCreateReserved1BitAmd = 2,
     }
 }

@@ -192,6 +192,8 @@ namespace Silk.NET.Vulkan
         PhysicalDeviceVideoFormatInfoKhr = 1000023014,
         [NativeName("Name", "VK_STRUCTURE_TYPE_VIDEO_FORMAT_PROPERTIES_KHR")]
         VideoFormatPropertiesKhr = 1000023015,
+        [NativeName("Name", "VK_STRUCTURE_TYPE_QUEUE_FAMILY_QUERY_RESULT_STATUS_PROPERTIES_2_KHR")]
+        QueueFamilyQueryResultStatusProperties2Khr = 1000023016,
         [NativeName("Name", "VK_STRUCTURE_TYPE_VIDEO_DECODE_INFO_KHR")]
         VideoDecodeInfoKhr = 1000024000,
         [NativeName("Name", "VK_STRUCTURE_TYPE_DEDICATED_ALLOCATION_IMAGE_CREATE_INFO_NV")]
@@ -234,6 +236,34 @@ namespace Silk.NET.Vulkan
         VideoEncodeH264EmitPictureParametersExt = 1000038007,
         [NativeName("Name", "VK_STRUCTURE_TYPE_VIDEO_ENCODE_H264_PROFILE_EXT")]
         VideoEncodeH264ProfileExt = 1000038008,
+        [NativeName("Name", "VK_STRUCTURE_TYPE_VIDEO_ENCODE_H264_RATE_CONTROL_INFO_EXT")]
+        VideoEncodeH264RateControlInfoExt = 1000038009,
+        [NativeName("Name", "VK_STRUCTURE_TYPE_VIDEO_ENCODE_H264_RATE_CONTROL_LAYER_INFO_EXT")]
+        VideoEncodeH264RateControlLayerInfoExt = 1000038010,
+        [NativeName("Name", "VK_STRUCTURE_TYPE_VIDEO_ENCODE_H265_CAPABILITIES_EXT")]
+        VideoEncodeH265CapabilitiesExt = 1000039000,
+        [NativeName("Name", "VK_STRUCTURE_TYPE_VIDEO_ENCODE_H265_SESSION_CREATE_INFO_EXT")]
+        VideoEncodeH265SessionCreateInfoExt = 1000039001,
+        [NativeName("Name", "VK_STRUCTURE_TYPE_VIDEO_ENCODE_H265_SESSION_PARAMETERS_CREATE_INFO_EXT")]
+        VideoEncodeH265SessionParametersCreateInfoExt = 1000039002,
+        [NativeName("Name", "VK_STRUCTURE_TYPE_VIDEO_ENCODE_H265_SESSION_PARAMETERS_ADD_INFO_EXT")]
+        VideoEncodeH265SessionParametersAddInfoExt = 1000039003,
+        [NativeName("Name", "VK_STRUCTURE_TYPE_VIDEO_ENCODE_H265_VCL_FRAME_INFO_EXT")]
+        VideoEncodeH265VclFrameInfoExt = 1000039004,
+        [NativeName("Name", "VK_STRUCTURE_TYPE_VIDEO_ENCODE_H265_DPB_SLOT_INFO_EXT")]
+        VideoEncodeH265DpbSlotInfoExt = 1000039005,
+        [NativeName("Name", "VK_STRUCTURE_TYPE_VIDEO_ENCODE_H265_NALU_SLICE_SEGMENT_EXT")]
+        VideoEncodeH265NaluSliceSegmentExt = 1000039006,
+        [NativeName("Name", "VK_STRUCTURE_TYPE_VIDEO_ENCODE_H265_EMIT_PICTURE_PARAMETERS_EXT")]
+        VideoEncodeH265EmitPictureParametersExt = 1000039007,
+        [NativeName("Name", "VK_STRUCTURE_TYPE_VIDEO_ENCODE_H265_PROFILE_EXT")]
+        VideoEncodeH265ProfileExt = 1000039008,
+        [NativeName("Name", "VK_STRUCTURE_TYPE_VIDEO_ENCODE_H265_REFERENCE_LISTS_EXT")]
+        VideoEncodeH265ReferenceListsExt = 1000039009,
+        [NativeName("Name", "VK_STRUCTURE_TYPE_VIDEO_ENCODE_H265_RATE_CONTROL_INFO_EXT")]
+        VideoEncodeH265RateControlInfoExt = 1000039010,
+        [NativeName("Name", "VK_STRUCTURE_TYPE_VIDEO_ENCODE_H265_RATE_CONTROL_LAYER_INFO_EXT")]
+        VideoEncodeH265RateControlLayerInfoExt = 1000039011,
         [NativeName("Name", "VK_STRUCTURE_TYPE_VIDEO_DECODE_H264_CAPABILITIES_EXT")]
         VideoDecodeH264CapabilitiesExt = 1000040000,
         [NativeName("Name", "VK_STRUCTURE_TYPE_VIDEO_DECODE_H264_SESSION_CREATE_INFO_EXT")]
@@ -252,6 +282,26 @@ namespace Silk.NET.Vulkan
         VideoDecodeH264DpbSlotInfoExt = 1000040007,
         [NativeName("Name", "VK_STRUCTURE_TYPE_TEXTURE_LOD_GATHER_FORMAT_PROPERTIES_AMD")]
         TextureLodGatherFormatPropertiesAmd = 1000041000,
+        [NativeName("Name", "VK_STRUCTURE_TYPE_RENDERING_INFO_KHR")]
+        RenderingInfoKhr = 1000044000,
+        [NativeName("Name", "VK_STRUCTURE_TYPE_RENDERING_ATTACHMENT_INFO_KHR")]
+        RenderingAttachmentInfoKhr = 1000044001,
+        [NativeName("Name", "VK_STRUCTURE_TYPE_PIPELINE_RENDERING_CREATE_INFO_KHR")]
+        PipelineRenderingCreateInfoKhr = 1000044002,
+        [NativeName("Name", "VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_DYNAMIC_RENDERING_FEATURES_KHR")]
+        PhysicalDeviceDynamicRenderingFeaturesKhr = 1000044003,
+        [NativeName("Name", "VK_STRUCTURE_TYPE_COMMAND_BUFFER_INHERITANCE_RENDERING_INFO_KHR")]
+        CommandBufferInheritanceRenderingInfoKhr = 1000044004,
+        [NativeName("Name", "VK_STRUCTURE_TYPE_RENDERING_FRAGMENT_SHADING_RATE_ATTACHMENT_INFO_KHR")]
+        RenderingFragmentShadingRateAttachmentInfoKhr = 1000044006,
+        [NativeName("Name", "VK_STRUCTURE_TYPE_RENDERING_FRAGMENT_DENSITY_MAP_ATTACHMENT_INFO_EXT")]
+        RenderingFragmentDensityMapAttachmentInfoExt = 1000044007,
+        [NativeName("Name", "VK_STRUCTURE_TYPE_ATTACHMENT_SAMPLE_COUNT_INFO_AMD")]
+        AttachmentSampleCountInfoAmd = 1000044008,
+        [NativeName("Name", "VK_STRUCTURE_TYPE_ATTACHMENT_SAMPLE_COUNT_INFO_NV")]
+        AttachmentSampleCountInfoNV = 1000044008,
+        [NativeName("Name", "VK_STRUCTURE_TYPE_MULTIVIEW_PER_VIEW_ATTRIBUTES_INFO_NVX")]
+        MultiviewPerViewAttributesInfoNvx = 1000044009,
         [NativeName("Name", "VK_STRUCTURE_TYPE_STREAM_DESCRIPTOR_SURFACE_CREATE_INFO_GGP")]
         StreamDescriptorSurfaceCreateInfoGgp = 1000049000,
         [NativeName("Name", "VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_CORNER_SAMPLED_IMAGE_FEATURES_NV")]
@@ -530,6 +580,8 @@ namespace Silk.NET.Vulkan
         MemoryGetAndroidHardwareBufferInfoAndroid = 1000129004,
         [NativeName("Name", "VK_STRUCTURE_TYPE_EXTERNAL_FORMAT_ANDROID")]
         ExternalFormatAndroid = 1000129005,
+        [NativeName("Name", "VK_STRUCTURE_TYPE_ANDROID_HARDWARE_BUFFER_FORMAT_PROPERTIES_2_ANDROID")]
+        AndroidHardwareBufferFormatProperties2Android = 1000129006,
         [NativeName("Name", "VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_SAMPLER_FILTER_MINMAX_PROPERTIES_EXT")]
         PhysicalDeviceSamplerFilterMinmaxPropertiesExt = 1000130000,
         [NativeName("Name", "VK_STRUCTURE_TYPE_SAMPLER_REDUCTION_MODE_CREATE_INFO_EXT")]
@@ -646,6 +698,8 @@ namespace Silk.NET.Vulkan
         ImageDrmFormatModifierExplicitCreateInfoExt = 1000158004,
         [NativeName("Name", "VK_STRUCTURE_TYPE_IMAGE_DRM_FORMAT_MODIFIER_PROPERTIES_EXT")]
         ImageDrmFormatModifierPropertiesExt = 1000158005,
+        [NativeName("Name", "VK_STRUCTURE_TYPE_DRM_FORMAT_MODIFIER_PROPERTIES_LIST_2_EXT")]
+        DrmFormatModifierPropertiesList2Ext = 1000158006,
         [NativeName("Name", "VK_STRUCTURE_TYPE_VALIDATION_CACHE_CREATE_INFO_EXT")]
         ValidationCacheCreateInfoExt = 1000160000,
         [NativeName("Name", "VK_STRUCTURE_TYPE_SHADER_MODULE_VALIDATION_CACHE_CREATE_INFO_EXT")]
@@ -742,6 +796,12 @@ namespace Silk.NET.Vulkan
         VideoDecodeH265PictureInfoExt = 1000187005,
         [NativeName("Name", "VK_STRUCTURE_TYPE_VIDEO_DECODE_H265_DPB_SLOT_INFO_EXT")]
         VideoDecodeH265DpbSlotInfoExt = 1000187006,
+        [NativeName("Name", "VK_STRUCTURE_TYPE_DEVICE_QUEUE_GLOBAL_PRIORITY_CREATE_INFO_KHR")]
+        DeviceQueueGlobalPriorityCreateInfoKhr = 1000174000,
+        [NativeName("Name", "VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_GLOBAL_PRIORITY_QUERY_FEATURES_KHR")]
+        PhysicalDeviceGlobalPriorityQueryFeaturesKhr = 1000388000,
+        [NativeName("Name", "VK_STRUCTURE_TYPE_QUEUE_FAMILY_GLOBAL_PRIORITY_PROPERTIES_KHR")]
+        QueueFamilyGlobalPriorityPropertiesKhr = 1000388001,
         [NativeName("Name", "VK_STRUCTURE_TYPE_DEVICE_MEMORY_OVERALLOCATION_CREATE_INFO_AMD")]
         DeviceMemoryOverallocationCreateInfoAmd = 1000189000,
         [NativeName("Name", "VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_VERTEX_ATTRIBUTE_DIVISOR_PROPERTIES_EXT")]
@@ -976,6 +1036,10 @@ namespace Silk.NET.Vulkan
         PhysicalDeviceInheritedViewportScissorFeaturesNV = 1000278000,
         [NativeName("Name", "VK_STRUCTURE_TYPE_COMMAND_BUFFER_INHERITANCE_VIEWPORT_SCISSOR_INFO_NV")]
         CommandBufferInheritanceViewportScissorInfoNV = 1000278001,
+        [NativeName("Name", "VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_SHADER_INTEGER_DOT_PRODUCT_FEATURES_KHR")]
+        PhysicalDeviceShaderIntegerDotProductFeaturesKhr = 1000280000,
+        [NativeName("Name", "VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_SHADER_INTEGER_DOT_PRODUCT_PROPERTIES_KHR")]
+        PhysicalDeviceShaderIntegerDotProductPropertiesKhr = 1000280001,
         [NativeName("Name", "VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_TEXEL_BUFFER_ALIGNMENT_FEATURES_EXT")]
         PhysicalDeviceTexelBufferAlignmentFeaturesExt = 1000281000,
         [NativeName("Name", "VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_TEXEL_BUFFER_ALIGNMENT_PROPERTIES_EXT")]
@@ -1018,6 +1082,8 @@ namespace Silk.NET.Vulkan
         VideoEncodeInfoKhr = 1000299000,
         [NativeName("Name", "VK_STRUCTURE_TYPE_VIDEO_ENCODE_RATE_CONTROL_INFO_KHR")]
         VideoEncodeRateControlInfoKhr = 1000299001,
+        [NativeName("Name", "VK_STRUCTURE_TYPE_VIDEO_ENCODE_RATE_CONTROL_LAYER_INFO_KHR")]
+        VideoEncodeRateControlLayerInfoKhr = 1000299002,
         [NativeName("Name", "VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_DIAGNOSTICS_CONFIG_FEATURES_NV")]
         PhysicalDeviceDiagnosticsConfigFeaturesNV = 1000300000,
         [NativeName("Name", "VK_STRUCTURE_TYPE_DEVICE_DIAGNOSTICS_CONFIG_CREATE_INFO_NV")]
@@ -1096,6 +1162,10 @@ namespace Silk.NET.Vulkan
         ImageResolve2Khr = 1000337010,
         [NativeName("Name", "VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_4444_FORMATS_FEATURES_EXT")]
         PhysicalDevice4444FormatsFeaturesExt = 1000340000,
+        [NativeName("Name", "VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_RASTERIZATION_ORDER_ATTACHMENT_ACCESS_FEATURES_ARM")]
+        PhysicalDeviceRasterizationOrderAttachmentAccessFeaturesArm = 1000342000,
+        [NativeName("Name", "VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_RGBA10X6_FORMATS_FEATURES_EXT")]
+        PhysicalDeviceRgba10X6FormatsFeaturesExt = 1000344000,
         [NativeName("Name", "VK_STRUCTURE_TYPE_DIRECTFB_SURFACE_CREATE_INFO_EXT")]
         DirectfbSurfaceCreateInfoExt = 1000346000,
         [NativeName("Name", "VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_MUTABLE_DESCRIPTOR_TYPE_FEATURES_VALVE")]
@@ -1110,6 +1180,14 @@ namespace Silk.NET.Vulkan
         VertexInputAttributeDescription2Ext = 1000352002,
         [NativeName("Name", "VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_DRM_PROPERTIES_EXT")]
         PhysicalDeviceDrmPropertiesExt = 1000353000,
+        [NativeName("Name", "VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_DEPTH_CLIP_CONTROL_FEATURES_EXT")]
+        PhysicalDeviceDepthClipControlFeaturesExt = 1000355000,
+        [NativeName("Name", "VK_STRUCTURE_TYPE_PIPELINE_VIEWPORT_DEPTH_CLIP_CONTROL_CREATE_INFO_EXT")]
+        PipelineViewportDepthClipControlCreateInfoExt = 1000355001,
+        [NativeName("Name", "VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_PRIMITIVE_TOPOLOGY_LIST_RESTART_FEATURES_EXT")]
+        PhysicalDevicePrimitiveTopologyListRestartFeaturesExt = 1000356000,
+        [NativeName("Name", "VK_STRUCTURE_TYPE_FORMAT_PROPERTIES_3_KHR")]
+        FormatProperties3Khr = 1000360000,
         [NativeName("Name", "VK_STRUCTURE_TYPE_IMPORT_MEMORY_ZIRCON_HANDLE_INFO_FUCHSIA")]
         ImportMemoryZirconHandleInfoFuchsia = 1000364000,
         [NativeName("Name", "VK_STRUCTURE_TYPE_MEMORY_ZIRCON_HANDLE_PROPERTIES_FUCHSIA")]
@@ -1120,6 +1198,26 @@ namespace Silk.NET.Vulkan
         ImportSemaphoreZirconHandleInfoFuchsia = 1000365000,
         [NativeName("Name", "VK_STRUCTURE_TYPE_SEMAPHORE_GET_ZIRCON_HANDLE_INFO_FUCHSIA")]
         SemaphoreGetZirconHandleInfoFuchsia = 1000365001,
+        [NativeName("Name", "VK_STRUCTURE_TYPE_BUFFER_COLLECTION_CREATE_INFO_FUCHSIA")]
+        BufferCollectionCreateInfoFuchsia = 1000366000,
+        [NativeName("Name", "VK_STRUCTURE_TYPE_IMPORT_MEMORY_BUFFER_COLLECTION_FUCHSIA")]
+        ImportMemoryBufferCollectionFuchsia = 1000366001,
+        [NativeName("Name", "VK_STRUCTURE_TYPE_BUFFER_COLLECTION_IMAGE_CREATE_INFO_FUCHSIA")]
+        BufferCollectionImageCreateInfoFuchsia = 1000366002,
+        [NativeName("Name", "VK_STRUCTURE_TYPE_BUFFER_COLLECTION_PROPERTIES_FUCHSIA")]
+        BufferCollectionPropertiesFuchsia = 1000366003,
+        [NativeName("Name", "VK_STRUCTURE_TYPE_BUFFER_CONSTRAINTS_INFO_FUCHSIA")]
+        BufferConstraintsInfoFuchsia = 1000366004,
+        [NativeName("Name", "VK_STRUCTURE_TYPE_BUFFER_COLLECTION_BUFFER_CREATE_INFO_FUCHSIA")]
+        BufferCollectionBufferCreateInfoFuchsia = 1000366005,
+        [NativeName("Name", "VK_STRUCTURE_TYPE_IMAGE_CONSTRAINTS_INFO_FUCHSIA")]
+        ImageConstraintsInfoFuchsia = 1000366006,
+        [NativeName("Name", "VK_STRUCTURE_TYPE_IMAGE_FORMAT_CONSTRAINTS_INFO_FUCHSIA")]
+        ImageFormatConstraintsInfoFuchsia = 1000366007,
+        [NativeName("Name", "VK_STRUCTURE_TYPE_SYSMEM_COLOR_SPACE_FUCHSIA")]
+        SysmemColorSpaceFuchsia = 1000366008,
+        [NativeName("Name", "VK_STRUCTURE_TYPE_BUFFER_COLLECTION_CONSTRAINTS_INFO_FUCHSIA")]
+        BufferCollectionConstraintsInfoFuchsia = 1000366009,
         [NativeName("Name", "VK_STRUCTURE_TYPE_SUBPASS_SHADING_PIPELINE_CREATE_INFO_HUAWEI")]
         SubpassShadingPipelineCreateInfoHuawei = 1000369000,
         [NativeName("Name", "VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_SUBPASS_SHADING_FEATURES_HUAWEI")]
@@ -1144,10 +1242,36 @@ namespace Silk.NET.Vulkan
         PhysicalDeviceGlobalPriorityQueryFeaturesExt = 1000388000,
         [NativeName("Name", "VK_STRUCTURE_TYPE_QUEUE_FAMILY_GLOBAL_PRIORITY_PROPERTIES_EXT")]
         QueueFamilyGlobalPriorityPropertiesExt = 1000388001,
+        [NativeName("Name", "VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_IMAGE_VIEW_MIN_LOD_FEATURES_EXT")]
+        PhysicalDeviceImageViewMinLodFeaturesExt = 1000391000,
+        [NativeName("Name", "VK_STRUCTURE_TYPE_IMAGE_VIEW_MIN_LOD_CREATE_INFO_EXT")]
+        ImageViewMinLodCreateInfoExt = 1000391001,
         [NativeName("Name", "VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_MULTI_DRAW_FEATURES_EXT")]
         PhysicalDeviceMultiDrawFeaturesExt = 1000392000,
         [NativeName("Name", "VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_MULTI_DRAW_PROPERTIES_EXT")]
         PhysicalDeviceMultiDrawPropertiesExt = 1000392001,
+        [NativeName("Name", "VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_BORDER_COLOR_SWIZZLE_FEATURES_EXT")]
+        PhysicalDeviceBorderColorSwizzleFeaturesExt = 1000411000,
+        [NativeName("Name", "VK_STRUCTURE_TYPE_SAMPLER_BORDER_COLOR_COMPONENT_MAPPING_CREATE_INFO_EXT")]
+        SamplerBorderColorComponentMappingCreateInfoExt = 1000411001,
+        [NativeName("Name", "VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_PAGEABLE_DEVICE_LOCAL_MEMORY_FEATURES_EXT")]
+        PhysicalDevicePageableDeviceLocalMemoryFeaturesExt = 1000412000,
+        [NativeName("Name", "VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_MAINTENANCE_4_FEATURES_KHR")]
+        PhysicalDeviceMaintenance4FeaturesKhr = 1000413000,
+        [NativeName("Name", "VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_MAINTENANCE_4_PROPERTIES_KHR")]
+        PhysicalDeviceMaintenance4PropertiesKhr = 1000413001,
+        [NativeName("Name", "VK_STRUCTURE_TYPE_DEVICE_BUFFER_MEMORY_REQUIREMENTS_KHR")]
+        DeviceBufferMemoryRequirementsKhr = 1000413002,
+        [NativeName("Name", "VK_STRUCTURE_TYPE_DEVICE_IMAGE_MEMORY_REQUIREMENTS_KHR")]
+        DeviceImageMemoryRequirementsKhr = 1000413003,
+        [NativeName("Name", "VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_FRAGMENT_DENSITY_MAP_OFFSET_FEATURES_QCOM")]
+        PhysicalDeviceFragmentDensityMapOffsetFeaturesQCom = 1000425000,
+        [NativeName("Name", "VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_FRAGMENT_DENSITY_MAP_OFFSET_PROPERTIES_QCOM")]
+        PhysicalDeviceFragmentDensityMapOffsetPropertiesQCom = 1000425001,
+        [NativeName("Name", "VK_STRUCTURE_TYPE_SUBPASS_FRAGMENT_DENSITY_MAP_OFFSET_END_INFO_QCOM")]
+        SubpassFragmentDensityMapOffsetEndInfoQCom = 1000425002,
+        [NativeName("Name", "VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_LINEAR_COLOR_ATTACHMENT_FEATURES_NV")]
+        PhysicalDeviceLinearColorAttachmentFeaturesNV = 1000430000,
         [NativeName("Name", "VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_SUBGROUP_PROPERTIES")]
         PhysicalDeviceSubgroupProperties = 1000094000,
         [NativeName("Name", "VK_STRUCTURE_TYPE_BIND_BUFFER_MEMORY_INFO")]
@@ -1382,5 +1506,109 @@ namespace Silk.NET.Vulkan
         MemoryOpaqueCaptureAddressAllocateInfo = 1000257003,
         [NativeName("Name", "VK_STRUCTURE_TYPE_DEVICE_MEMORY_OPAQUE_CAPTURE_ADDRESS_INFO")]
         DeviceMemoryOpaqueCaptureAddressInfo = 1000257004,
+        [NativeName("Name", "VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_VULKAN_1_3_FEATURES")]
+        PhysicalDeviceVulkan13Features = 53,
+        [NativeName("Name", "VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_VULKAN_1_3_PROPERTIES")]
+        PhysicalDeviceVulkan13Properties = 54,
+        [NativeName("Name", "VK_STRUCTURE_TYPE_PIPELINE_CREATION_FEEDBACK_CREATE_INFO")]
+        PipelineCreationFeedbackCreateInfo = 1000192000,
+        [NativeName("Name", "VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_SHADER_TERMINATE_INVOCATION_FEATURES")]
+        PhysicalDeviceShaderTerminateInvocationFeatures = 1000215000,
+        [NativeName("Name", "VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_TOOL_PROPERTIES")]
+        PhysicalDeviceToolProperties = 1000245000,
+        [NativeName("Name", "VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_SHADER_DEMOTE_TO_HELPER_INVOCATION_FEATURES")]
+        PhysicalDeviceShaderDemoteToHelperInvocationFeatures = 1000276000,
+        [NativeName("Name", "VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_PRIVATE_DATA_FEATURES")]
+        PhysicalDevicePrivateDataFeatures = 1000295000,
+        [NativeName("Name", "VK_STRUCTURE_TYPE_DEVICE_PRIVATE_DATA_CREATE_INFO")]
+        DevicePrivateDataCreateInfo = 1000295001,
+        [NativeName("Name", "VK_STRUCTURE_TYPE_PRIVATE_DATA_SLOT_CREATE_INFO")]
+        PrivateDataSlotCreateInfo = 1000295002,
+        [NativeName("Name", "VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_PIPELINE_CREATION_CACHE_CONTROL_FEATURES")]
+        PhysicalDevicePipelineCreationCacheControlFeatures = 1000297000,
+        [NativeName("Name", "VK_STRUCTURE_TYPE_MEMORY_BARRIER_2")]
+        MemoryBarrier2 = 1000314000,
+        [NativeName("Name", "VK_STRUCTURE_TYPE_BUFFER_MEMORY_BARRIER_2")]
+        BufferMemoryBarrier2 = 1000314001,
+        [NativeName("Name", "VK_STRUCTURE_TYPE_IMAGE_MEMORY_BARRIER_2")]
+        ImageMemoryBarrier2 = 1000314002,
+        [NativeName("Name", "VK_STRUCTURE_TYPE_DEPENDENCY_INFO")]
+        DependencyInfo = 1000314003,
+        [NativeName("Name", "VK_STRUCTURE_TYPE_SUBMIT_INFO_2")]
+        SubmitInfo2 = 1000314004,
+        [NativeName("Name", "VK_STRUCTURE_TYPE_SEMAPHORE_SUBMIT_INFO")]
+        SemaphoreSubmitInfo = 1000314005,
+        [NativeName("Name", "VK_STRUCTURE_TYPE_COMMAND_BUFFER_SUBMIT_INFO")]
+        CommandBufferSubmitInfo = 1000314006,
+        [NativeName("Name", "VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_SYNCHRONIZATION_2_FEATURES")]
+        PhysicalDeviceSynchronization2Features = 1000314007,
+        [NativeName("Name", "VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_ZERO_INITIALIZE_WORKGROUP_MEMORY_FEATURES")]
+        PhysicalDeviceZeroInitializeWorkgroupMemoryFeatures = 1000325000,
+        [NativeName("Name", "VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_IMAGE_ROBUSTNESS_FEATURES")]
+        PhysicalDeviceImageRobustnessFeatures = 1000335000,
+        [NativeName("Name", "VK_STRUCTURE_TYPE_COPY_BUFFER_INFO_2")]
+        CopyBufferInfo2 = 1000337000,
+        [NativeName("Name", "VK_STRUCTURE_TYPE_COPY_IMAGE_INFO_2")]
+        CopyImageInfo2 = 1000337001,
+        [NativeName("Name", "VK_STRUCTURE_TYPE_COPY_BUFFER_TO_IMAGE_INFO_2")]
+        CopyBufferToImageInfo2 = 1000337002,
+        [NativeName("Name", "VK_STRUCTURE_TYPE_COPY_IMAGE_TO_BUFFER_INFO_2")]
+        CopyImageToBufferInfo2 = 1000337003,
+        [NativeName("Name", "VK_STRUCTURE_TYPE_BLIT_IMAGE_INFO_2")]
+        BlitImageInfo2 = 1000337004,
+        [NativeName("Name", "VK_STRUCTURE_TYPE_RESOLVE_IMAGE_INFO_2")]
+        ResolveImageInfo2 = 1000337005,
+        [NativeName("Name", "VK_STRUCTURE_TYPE_BUFFER_COPY_2")]
+        BufferCopy2 = 1000337006,
+        [NativeName("Name", "VK_STRUCTURE_TYPE_IMAGE_COPY_2")]
+        ImageCopy2 = 1000337007,
+        [NativeName("Name", "VK_STRUCTURE_TYPE_IMAGE_BLIT_2")]
+        ImageBlit2 = 1000337008,
+        [NativeName("Name", "VK_STRUCTURE_TYPE_BUFFER_IMAGE_COPY_2")]
+        BufferImageCopy2 = 1000337009,
+        [NativeName("Name", "VK_STRUCTURE_TYPE_IMAGE_RESOLVE_2")]
+        ImageResolve2 = 1000337010,
+        [NativeName("Name", "VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_SUBGROUP_SIZE_CONTROL_PROPERTIES")]
+        PhysicalDeviceSubgroupSizeControlProperties = 1000225000,
+        [NativeName("Name", "VK_STRUCTURE_TYPE_PIPELINE_SHADER_STAGE_REQUIRED_SUBGROUP_SIZE_CREATE_INFO")]
+        PipelineShaderStageRequiredSubgroupSizeCreateInfo = 1000225001,
+        [NativeName("Name", "VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_SUBGROUP_SIZE_CONTROL_FEATURES")]
+        PhysicalDeviceSubgroupSizeControlFeatures = 1000225002,
+        [NativeName("Name", "VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_INLINE_UNIFORM_BLOCK_FEATURES")]
+        PhysicalDeviceInlineUniformBlockFeatures = 1000138000,
+        [NativeName("Name", "VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_INLINE_UNIFORM_BLOCK_PROPERTIES")]
+        PhysicalDeviceInlineUniformBlockProperties = 1000138001,
+        [NativeName("Name", "VK_STRUCTURE_TYPE_WRITE_DESCRIPTOR_SET_INLINE_UNIFORM_BLOCK")]
+        WriteDescriptorSetInlineUniformBlock = 1000138002,
+        [NativeName("Name", "VK_STRUCTURE_TYPE_DESCRIPTOR_POOL_INLINE_UNIFORM_BLOCK_CREATE_INFO")]
+        DescriptorPoolInlineUniformBlockCreateInfo = 1000138003,
+        [NativeName("Name", "VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_TEXTURE_COMPRESSION_ASTC_HDR_FEATURES")]
+        PhysicalDeviceTextureCompressionAstcHdrFeatures = 1000066000,
+        [NativeName("Name", "VK_STRUCTURE_TYPE_RENDERING_INFO")]
+        RenderingInfo = 1000044000,
+        [NativeName("Name", "VK_STRUCTURE_TYPE_RENDERING_ATTACHMENT_INFO")]
+        RenderingAttachmentInfo = 1000044001,
+        [NativeName("Name", "VK_STRUCTURE_TYPE_PIPELINE_RENDERING_CREATE_INFO")]
+        PipelineRenderingCreateInfo = 1000044002,
+        [NativeName("Name", "VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_DYNAMIC_RENDERING_FEATURES")]
+        PhysicalDeviceDynamicRenderingFeatures = 1000044003,
+        [NativeName("Name", "VK_STRUCTURE_TYPE_COMMAND_BUFFER_INHERITANCE_RENDERING_INFO")]
+        CommandBufferInheritanceRenderingInfo = 1000044004,
+        [NativeName("Name", "VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_SHADER_INTEGER_DOT_PRODUCT_FEATURES")]
+        PhysicalDeviceShaderIntegerDotProductFeatures = 1000280000,
+        [NativeName("Name", "VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_SHADER_INTEGER_DOT_PRODUCT_PROPERTIES")]
+        PhysicalDeviceShaderIntegerDotProductProperties = 1000280001,
+        [NativeName("Name", "VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_TEXEL_BUFFER_ALIGNMENT_PROPERTIES")]
+        PhysicalDeviceTexelBufferAlignmentProperties = 1000281001,
+        [NativeName("Name", "VK_STRUCTURE_TYPE_FORMAT_PROPERTIES_3")]
+        FormatProperties3 = 1000360000,
+        [NativeName("Name", "VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_MAINTENANCE_4_FEATURES")]
+        PhysicalDeviceMaintenance4Features = 1000413000,
+        [NativeName("Name", "VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_MAINTENANCE_4_PROPERTIES")]
+        PhysicalDeviceMaintenance4Properties = 1000413001,
+        [NativeName("Name", "VK_STRUCTURE_TYPE_DEVICE_BUFFER_MEMORY_REQUIREMENTS")]
+        DeviceBufferMemoryRequirements = 1000413002,
+        [NativeName("Name", "VK_STRUCTURE_TYPE_DEVICE_IMAGE_MEMORY_REQUIREMENTS")]
+        DeviceImageMemoryRequirements = 1000413003,
     }
 }

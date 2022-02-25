@@ -9,7 +9,7 @@ using Silk.NET.Core.Attributes;
 
 namespace Silk.NET.Vulkan
 {
-    [Flags()]
+    [Flags]
     [NativeName("Name", "VkPipelineCreateFlags")]
     public enum PipelineCreateFlags : int
     {
@@ -19,10 +19,14 @@ namespace Silk.NET.Vulkan
         PipelineCreateAllowDerivativesBit = 2,
         [NativeName("Name", "VK_PIPELINE_CREATE_DERIVATIVE_BIT")]
         PipelineCreateDerivativeBit = 4,
-        [NativeName("Name", "VK_PIPELINE_CREATE_RESERVED_21_BIT_AMD")]
-        PipelineCreateReserved21BitAmd = 2097152,
-        [NativeName("Name", "VK_PIPELINE_CREATE_RESERVED_22_BIT_AMD")]
-        PipelineCreateReserved22BitAmd = 4194304,
+        [NativeName("Name", "VK_PIPELINE_CREATE_RENDERING_FRAGMENT_SHADING_RATE_ATTACHMENT_BIT_KHR")]
+        PipelineCreateRenderingFragmentShadingRateAttachmentBitKhr = 2097152,
+        [NativeName("Name", "VK_PIPELINE_RASTERIZATION_STATE_CREATE_FRAGMENT_SHADING_RATE_ATTACHMENT_BIT_KHR")]
+        PipelineRasterizationStateCreateFragmentShadingRateAttachmentBitKhr = 2097152,
+        [NativeName("Name", "VK_PIPELINE_CREATE_RENDERING_FRAGMENT_DENSITY_MAP_ATTACHMENT_BIT_EXT")]
+        PipelineCreateRenderingFragmentDensityMapAttachmentBitExt = 4194304,
+        [NativeName("Name", "VK_PIPELINE_RASTERIZATION_STATE_CREATE_FRAGMENT_DENSITY_MAP_ATTACHMENT_BIT_EXT")]
+        PipelineRasterizationStateCreateFragmentDensityMapAttachmentBitExt = 4194304,
         [NativeName("Name", "VK_PIPELINE_CREATE_VIEW_INDEX_FROM_DEVICE_INDEX_BIT_KHR")]
         PipelineCreateViewIndexFromDeviceIndexBitKhr = 8,
         [NativeName("Name", "VK_PIPELINE_CREATE_DISPATCH_BASE_KHR")]
@@ -67,5 +71,9 @@ namespace Silk.NET.Vulkan
         PipelineCreateDispatchBaseBit = 16,
         [NativeName("Name", "VK_PIPELINE_CREATE_DISPATCH_BASE")]
         PipelineCreateDispatchBase = 16,
+        [NativeName("Name", "VK_PIPELINE_CREATE_FAIL_ON_PIPELINE_COMPILE_REQUIRED_BIT")]
+        PipelineCreateFailOnPipelineCompileRequiredBit = 256,
+        [NativeName("Name", "VK_PIPELINE_CREATE_EARLY_RETURN_ON_FAILURE_BIT")]
+        PipelineCreateEarlyReturnOnFailureBit = 512,
     }
 }
